@@ -40,11 +40,11 @@ export default function SelectedWorks() {
         </motion.div>
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-12 md:gap-6">
-          {PROJECTS.map((project) => {
-            const card = (
-              <article
-                className={`group relative overflow-hidden rounded-3xl border border-stroke bg-surface ${project.span}`}
-              >
+          {PROJECTS.map((project) => (
+            <article
+              key={project.title}
+              className={`group relative overflow-hidden rounded-3xl border border-stroke bg-surface ${project.span}`}
+            >
                 <div
                   className="relative flex aspect-[4/3] items-center justify-center transition-transform duration-500 group-hover:scale-105 md:aspect-[16/10]"
                   style={{ background: project.gradient }}
@@ -60,35 +60,37 @@ export default function SelectedWorks() {
                     <h3 className="mt-1 text-xl text-text-primary">{project.title}</h3>
                     <p className="mt-2 text-sm text-muted">{project.description}</p>
                     <p className="mt-3 text-xs text-muted">{project.stack}</p>
+                    {(project.deploy || project.href) && (
+                      <p className="mt-4 flex flex-wrap gap-4 text-sm">
+                        {project.deploy && (
+                          <a
+                            href={project.deploy}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-text-primary underline-offset-4 hover:underline"
+                          >
+                            Live demo
+                          </a>
+                        )}
+                        {project.href && (
+                          <a
+                            href={project.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-muted underline-offset-4 hover:text-text-primary hover:underline"
+                          >
+                            Source code
+                          </a>
+                        )}
+                      </p>
+                    )}
                   </div>
                   <span className="accent-gradient hidden shrink-0 rounded-full px-3 py-1.5 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 md:inline-block">
                     View
                   </span>
                 </div>
-                <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-bg/70 opacity-0 backdrop-blur-lg transition-opacity group-hover:opacity-100">
-                  <span className="rounded-full bg-white px-5 py-2.5 text-sm text-black">
-                    View &mdash; <em className="font-display italic">{project.title}</em>
-                  </span>
-                </div>
-              </article>
-            )
-            return project.href ? (
-              <a
-                key={project.title}
-                href={project.href}
-                target="_blank"
-                rel="noreferrer"
-                className={`contents ${project.span}`}
-                aria-label={`Open ${project.title} on GitHub`}
-              >
-                {card}
-              </a>
-            ) : (
-              <div key={project.title} className={`contents ${project.span}`}>
-                {card}
-              </div>
-            )
-          })}
+            </article>
+          ))}
         </div>
       </div>
     </section>

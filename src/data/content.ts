@@ -17,6 +17,7 @@ export type Project = {
   initials: string
   span: string
   href?: string
+  deploy?: string
 }
 
 export const PROJECTS: Project[] = [
@@ -51,6 +52,7 @@ export const PROJECTS: Project[] = [
     initials: 'SM',
     span: 'md:col-span-5',
     href: 'https://github.com/asotaku205/SocialMedia',
+    deploy: 'https://as-social.vercel.app',
   },
   {
     title: 'AS-Study',
