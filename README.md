@@ -7,8 +7,7 @@ Portfolio mot trang, nen toi, cua Anh Son - frontend developer intern tai GDT Te
 - hls.js cho video nen HLS, co fallback HLS native
 - react-router-dom, tailwindcss-animate
 
-Du an that: AniMan Admin Panel, OrderTower Dashboard, AniMan Manga Studio,
-Freelance Dashboard. So lieu that: 4+ du an, 20 ky nang, 2 nen tang freelance.
+Du an that: AniMan, OrderTower Dashboard, Social Media, AS-Study. So lieu that: 4+ du an, 20 ky nang, 2 nen tang freelance.
 
 ## Cau truc
 

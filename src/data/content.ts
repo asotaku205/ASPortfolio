@@ -21,13 +21,13 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    title: 'AniMan Admin Panel',
-    tag: 'Admin dashboard',
+    title: 'AniMan',
+    tag: 'Manga, novel and animation platform',
     description:
-      'Admin panel for a manga, novel and animation platform, with user and content management screens.',
+      'Web platform for reading and creating manga, novels and animated films, with an admin panel and a drawing studio where AI only assists the artist.',
     stack: 'Next.js 16, NestJS, TypeScript, PostgreSQL',
     gradient: 'linear-gradient(135deg, #89aacc 0%, #4e85bf 55%, #1b2a3a 100%)',
-    initials: 'AA',
+    initials: 'AN',
     span: 'md:col-span-7',
     href: 'https://github.com/asotaku205/AniMan',
   },
@@ -42,25 +42,26 @@ export const PROJECTS: Project[] = [
     span: 'md:col-span-5',
   },
   {
-    title: 'AniMan Manga Studio',
-    tag: 'Creation studio',
+    title: 'Social Media',
+    tag: 'Social media app',
     description:
-      'Drawing and manga creation studio where AI only assists the artist, never generates a full image.',
-    stack: 'Next.js, Canvas, TypeScript',
+      'Full-featured social media app with posts, stories and real-time end-to-end encrypted chat.',
+    stack: 'Flutter, Dart, Firebase',
     gradient: 'linear-gradient(135deg, #89aacc 0%, #6b7f96 55%, #232b33 100%)',
-    initials: 'MS',
+    initials: 'SM',
     span: 'md:col-span-5',
-    href: 'https://github.com/asotaku205/AniMan',
+    href: 'https://github.com/asotaku205/SocialMedia',
   },
   {
-    title: 'Freelance Dashboard',
-    tag: 'Personal tool',
+    title: 'AS-Study',
+    tag: 'AI study assistant',
     description:
-      'Personal dashboard to track freelance jobs, proposals, income and profiles across platforms.',
-    stack: 'React, TypeScript',
+      'Smart study web app: upload documents, extract text with OCR, chat with documents through Gemini RAG, and generate quizzes by Bloom level.',
+    stack: 'TypeScript, Gemini API, Tesseract OCR',
     gradient: 'linear-gradient(135deg, #3f6d8f 0%, #22384a 60%, #0d1117 100%)',
-    initials: 'FD',
+    initials: 'AS',
     span: 'md:col-span-7',
+    href: 'https://github.com/asotaku205/AS-Study',
   },
 ]
 
@@ -119,7 +120,7 @@ export const EXPLORATIONS: Exploration[] = [
   { title: 'OrderTower overview', note: 'KPIs and approval queue', gradient: 'linear-gradient(135deg, #4e85bf, #2b4a68)', initials: 'OO' },
   { title: 'AniMan manga canvas', note: 'Drawing workspace', gradient: 'linear-gradient(135deg, #6b7f96, #232b33)', initials: 'MC' },
   { title: 'OrderTower orders', note: 'Order table and filters', gradient: 'linear-gradient(135deg, #3f6d8f, #0d1117)', initials: 'OR' },
-  { title: 'Freelance job queue', note: 'Kanban of open jobs', gradient: 'linear-gradient(135deg, #89aacc, #22384a)', initials: 'FJ' },
+  { title: 'AS-Study document chat', note: 'RAG chat with documents', gradient: 'linear-gradient(135deg, #89aacc, #22384a)', initials: 'AS' },
   { title: 'Dashboard components', note: 'Shared cards and tables', gradient: 'linear-gradient(135deg, #4e85bf, #10161d)', initials: 'DC' },
 ]
 
