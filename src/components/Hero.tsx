@@ -33,7 +33,7 @@ export default function Hero() {
 
   return (
     <section ref={sectionRef} id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden">
-      <HlsVideo src={HLS_STREAM_URL} position="50% 72%" />
+      <HlsVideo src={HLS_STREAM_URL} position="50% 25%" />
       <div className="absolute inset-0 bg-black/20" />
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-bg to-transparent" />
 
