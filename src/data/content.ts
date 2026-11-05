@@ -15,6 +15,7 @@ export type Project = {
   stack: string
   gradient: string
   initials: string
+  image: string
   span: string
   href?: string
   deploy?: string
@@ -29,6 +30,7 @@ export const PROJECTS: Project[] = [
     stack: 'Next.js 16, NestJS, TypeScript, PostgreSQL',
     gradient: 'linear-gradient(135deg, #89aacc 0%, #4e85bf 55%, #1b2a3a 100%)',
     initials: 'AN',
+    image: '/images/animan.jpg',
     span: 'md:col-span-7',
     href: 'https://github.com/asotaku205/AniMan',
   },
@@ -40,6 +42,7 @@ export const PROJECTS: Project[] = [
     stack: 'React, Next.js, Figma to code',
     gradient: 'linear-gradient(135deg, #4e85bf 0%, #2b4a68 60%, #10161d 100%)',
     initials: 'OT',
+    image: '/images/ordertower.jpg',
     span: 'md:col-span-5',
   },
   {
@@ -50,6 +53,7 @@ export const PROJECTS: Project[] = [
     stack: 'Flutter, Dart, Firebase',
     gradient: 'linear-gradient(135deg, #89aacc 0%, #6b7f96 55%, #232b33 100%)',
     initials: 'SM',
+    image: '/images/social.jpg',
     span: 'md:col-span-5',
     href: 'https://github.com/asotaku205/SocialMedia',
     deploy: 'https://as-social.vercel.app',
@@ -62,6 +66,7 @@ export const PROJECTS: Project[] = [
     stack: 'TypeScript, Gemini API, Tesseract OCR',
     gradient: 'linear-gradient(135deg, #3f6d8f 0%, #22384a 60%, #0d1117 100%)',
     initials: 'AS',
+    image: '/images/asstudy.jpg',
     span: 'md:col-span-7',
     href: 'https://github.com/asotaku205/AS-Study',
   },

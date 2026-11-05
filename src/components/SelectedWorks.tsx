@@ -45,13 +45,13 @@ export default function SelectedWorks() {
               key={project.title}
               className={`group relative overflow-hidden rounded-3xl border border-stroke bg-surface ${project.span}`}
             >
-                <div
-                  className="relative flex aspect-[4/3] items-center justify-center transition-transform duration-500 group-hover:scale-105 md:aspect-[16/10]"
-                  style={{ background: project.gradient }}
-                >
-                  <span className="font-display text-6xl italic text-white/80 md:text-7xl">
-                    {project.initials}
-                  </span>
+                <div className="relative aspect-[4/3] overflow-hidden md:aspect-[16/10]">
+                  <img
+                    src={`${import.meta.env.BASE_URL}${project.image.slice(1)}`}
+                    alt={`${project.title} cover`}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                   <span className="halftone pointer-events-none absolute inset-0 opacity-20 mix-blend-multiply" />
                 </div>
                 <div className="flex items-start justify-between gap-4 p-5 md:p-6">
