@@ -139,6 +139,7 @@ export const STATS = [
 
 export const SOCIALS = [
   { label: 'GitHub', href: 'https://github.com/asotaku205' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/asotaku205/' },
   { label: 'Upwork', href: 'https://www.upwork.com/freelancers/~01752de50bf058b1c0' },
   { label: 'Freelancer', href: 'https://www.vn.freelancer.com/u/asotaku205' },
 ]
