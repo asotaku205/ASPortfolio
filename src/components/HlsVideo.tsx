@@ -5,19 +5,13 @@ type HlsVideoProps = {
   src: string
   className?: string
   flipped?: boolean
-  /**
-   * Where the visible window sits inside the video frame. The video is
-   * cropped with object-cover, so '50% 50%' centers it and a larger second
-   * value (for example '50% 72%') shows more of the lower part of the frame.
-   */
-  position?: string
 }
 
 /**
  * Background video over HLS. Uses hls.js when supported, falls back to
  * native HLS (Safari) when the browser can play it directly.
  */
-export default function HlsVideo({ src, className = '', flipped = false, position = '50% 50%' }: HlsVideoProps) {
+export default function HlsVideo({ src, className = '', flipped = false }: HlsVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
@@ -43,8 +37,7 @@ export default function HlsVideo({ src, className = '', flipped = false, positio
       muted
       loop
       playsInline
-      style={{ objectPosition: position }}
-      className={`absolute inset-0 h-full w-full object-cover ${flipped ? 'scale-y-[-1]' : ''} ${className}`}
+      className={`absolute left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 object-cover ${flipped ? 'scale-y-[-1]' : ''} ${className}`}
     />
   )
 }
